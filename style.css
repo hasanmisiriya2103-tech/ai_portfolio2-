@@ -1,0 +1,236 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0b0c10;
+color:white;
+}
+#intro-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0b0c10;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:9999;
+overflow:hidden;
+}
+
+.intro-name{
+color:cyan;
+font-size:50px;
+letter-spacing:5px;
+font-weight:bold;
+text-shadow:0 0 20px cyan;
+}
+
+.scan-line{
+position:absolute;
+width:100%;
+height:3px;
+background:cyan;
+top:-10px;
+box-shadow:0 0 15px cyan;
+animation:scan 2.5s linear infinite;
+}
+
+@keyframes scan{
+0%{
+top:0;
+}
+100%{
+top:100%;
+}
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+#neural-network{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+header{
+text-align:center;
+padding:40px;
+}
+
+.profile-img{
+width:150px;
+border-radius:50%;
+border:3px solid cyan;
+}
+
+nav a{
+margin:10px;
+color:cyan;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:60px;
+text-align:center;
+}
+
+.card{
+background:#1f2833;
+padding:25px;
+margin:20px auto;
+width:300px;
+border-radius:10px;
+box-shadow:0 0 10px cyan;
+}
+
+.card a{
+text-decoration:none;
+}
+.card{
+text-align:center;
+}
+
+.skills span{
+display:inline-block;
+background:#1f2833;
+padding:10px;
+margin:8px;
+border-radius:6px;
+box-shadow:0 0 6px cyan;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.contact-btn{
+background:cyan;
+color:black;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 10px cyan;
+transition:0.3s;
+}
+
+.contact-btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+.projects-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.project-card{
+background:#1f2833;
+padding:20px;
+width:320px;
+border-radius:12px;
+box-shadow:0 0 12px cyan;
+}
+
+.project-img{
+width:100%;
+border-radius:8px;
+}
+
+.buttons{
+margin-top:10px;
+}
+
+.buttons a{
+background:cyan;
+color:black;
+padding:8px 12px;
+margin-right:8px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer-img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px cyan;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.offer-img:hover {
+  transform: scale(1.05);
+}
+
+.offer-demo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0b0c10;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px cyan;
+  z-index: 100;
+}
+
+.offer-demo button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: cyan;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.buttons a{
+background:cyan;
+color:black;
+padding:8px 12px;
+margin-top:10px;
+display:inline-block;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+.offer-btn{
+background:cyan;
+color:black;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:10px;
+font-size:16px;
+letter-spacing:1px;
+}
